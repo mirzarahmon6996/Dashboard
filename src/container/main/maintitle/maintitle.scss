@@ -1,0 +1,35 @@
+.maintitle__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    color: #252733;
+  }
+}
+
+.maintitle__content {
+  display: flex;
+  align-items: center;
+}
+.maintitle__logo {
+  margin-left: 28px;
+}
+.maintitle__hr {
+  width: 2px;
+  margin: 0 33px;
+  height: 32px;
+  background-color: #dfe0eb;
+}
+.maintitle__span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: 0.2px;
+  margin-right: 14px;
+  color: #252733;
+}
