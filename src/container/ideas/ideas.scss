@@ -1,0 +1,27 @@
+.ideas__block {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.ideas__box {
+  padding: 30px;
+  background-color: rgb(225, 235, 231);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 270px;
+  height: 70px;
+  opacity: 0.5;
+  &:hover {
+    box-shadow: 1px 1px 10px 1px rgb(225, 235, 231);
+    opacity: 1;
+  }
+  & p {
+    font-size: 22px;
+    font-weight: 800;
+  }
+  & h1 {
+    font-size: 20px;
+  }
+}

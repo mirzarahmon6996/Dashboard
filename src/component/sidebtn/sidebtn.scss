@@ -15,7 +15,7 @@
     color: #dde2ff;
     border-left: 2px solid #dde2ff;
     background-color: #9fa2b451;
-    path{
+    path {
       fill: white;
       opacity: 1;
     }
@@ -26,4 +26,12 @@
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.2px;
+}
+a {
+  text-decoration: none;
+}
+
+.line {
+  width: 13, 5vw;
+  border: 1px solid #dfe0eb4b;
 }

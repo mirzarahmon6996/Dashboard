@@ -1,0 +1,29 @@
+.overwrapper {
+  padding: 8px 12px;
+  background: #ffffff;
+  width: 305px;
+  border: 1px solid #dfe0eb;
+  border-radius: 8px;
+  &:hover {
+    border: 1px solid #3751ff;
+  }
+  &:hover p {
+    color: #3751ff;
+  }
+}
+.overtitle {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #9fa2b4;
+}
+.overnum {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #252733;
+}
