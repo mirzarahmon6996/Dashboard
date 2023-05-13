@@ -4,11 +4,11 @@ import "./sidebar.scss"
 
 
 
-const Sidebar = ()=>{
+const Sidebar = ({setTitle,title})=>{
     return(
         <div className="sidebar__wrapper ">
         <Logo/>
-        <Sidebtn/>
+        <Sidebtn setTitle={setTitle} title={title} />
         </div>
     )
 }

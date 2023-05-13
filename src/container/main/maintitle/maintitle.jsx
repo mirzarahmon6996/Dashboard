@@ -3,10 +3,10 @@ import Maintitleimg from "../../../assets/icons/maincontent__img.svg";
 import Notification from "../../../assets/icons/notification.svg";
 import { Search } from "../../../assets/images";
 import { Link } from "react-router-dom";
-const Maintitle = () => {
+const Maintitle = ({setTitle,title}) => {
   return (
     <div className="maintitle__wrapper">
-      <h2>Tickets</h2>
+      <h2>{title}</h2>
       <div className="maintitle__content">
 <Search />  
         <img className="maintitle__logo" src={Notification} alt="" />

@@ -11,11 +11,11 @@ import {
   Settings,
   Subscription,
 } from "../../assets/images.jsx";
-const Sidebtn = () => {
+const Sidebtn = ({setTitle,title}) => {
   const [bgColor, setBgColor] = useState("");
   return (
     <div>
-      <NavLink to="/overview">
+      <NavLink onClick={()=>setTitle("Overview")} to="/overview">
         <button
           className={`btn-wrapper ${bgColor === "overview" ? "active" : " "}`}
           onClick={() => setBgColor("overview")}
@@ -23,7 +23,7 @@ const Sidebtn = () => {
           <Overview /> <span className="btn-title"> Overview</span>
         </button>
       </NavLink>
-      <NavLink to="/tickets">
+      <NavLink onClick={()=>setTitle("Tickets")}  to="/tickets">
         <button
           className={`btn-wrapper ${bgColor === "tickets" ? "active" : " "}`}
           onClick={() => setBgColor("tickets")}
@@ -31,7 +31,7 @@ const Sidebtn = () => {
           <Tickets /> <span className="btn-title">Tickets</span>
         </button>
       </NavLink>
-      <NavLink to="/ideas">
+      <NavLink onClick={()=>setTitle("Ideas")}   to="/ideas">
         <button
           className={`btn-wrapper ${bgColor === "ideas" ? "active" : " "}`}
           onClick={() => setBgColor("ideas")}
@@ -39,7 +39,7 @@ const Sidebtn = () => {
           <Ideas /> <span className="btn-title">Ideas</span>
         </button>
       </NavLink>
-      <NavLink to="/contacts">
+      <NavLink onClick={()=>setTitle("Contacts")}  to="/contacts">
         <button
           className={`btn-wrapper ${bgColor === "contacts" ? "active" : " "}`}
           onClick={() => setBgColor("contacts")}
@@ -47,7 +47,7 @@ const Sidebtn = () => {
           <Contacts /> <span className="btn-title">Contacts</span>
         </button>
       </NavLink>
-      <NavLink to="/agents">
+      <NavLink  onClick={()=>setTitle("Agents")}  to="/agents">
         <button
           className={`btn-wrapper ${bgColor === "agents" ? "active" : " "}`}
           onClick={() => setBgColor("agents")}
@@ -55,7 +55,7 @@ const Sidebtn = () => {
           <Agents /> <span className="btn-title">Agents</span>
         </button>
       </NavLink>
-      <NavLink to="articles">
+      <NavLink onClick={()=>setTitle("Articles")} to="articles">
         {" "}
         <button
           className={`btn-wrapper ${bgColor === "articles" ? "active" : " "}`}
@@ -65,7 +65,7 @@ const Sidebtn = () => {
         </button>
       </NavLink>
       <div className="line"></div>
-      <NavLink to="settings">
+      <NavLink onClick={()=>setTitle("Settings")} to="settings">
         {" "}
         <button
           className={`btn-wrapper ${bgColor === "settings" ? "active" : " "}`}
@@ -74,7 +74,7 @@ const Sidebtn = () => {
           <Settings /> <span className="btn-title">Settings</span>
         </button>
       </NavLink>
-      <NavLink to="subscription">
+      <NavLink onClick={()=>setTitle("Subscription")} to="subscription">
         <button
           className={`btn-wrapper ${
             bgColor === "subscription" ? "active" : " "
