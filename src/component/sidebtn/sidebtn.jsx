@@ -13,7 +13,7 @@ import {
 } from "../../assets/images.jsx";
 const Sidebtn = ({setTitle,title}) => {
   const [bgColor, setBgColor] = useState("");
-  return (
+  return ( 
     <div>
       <NavLink onClick={()=>setTitle("Overview")} to="/overview">
         <button

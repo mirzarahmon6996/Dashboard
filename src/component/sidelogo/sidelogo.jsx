@@ -1,6 +1,6 @@
 import "./sidelogo.scss";
 import logo from "../../assets/icons/logo.svg";
-let Logo = () => {
+const Logo = () => {
   return (
     <div>
       <div className="logo__wrapper">
